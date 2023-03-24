@@ -1,7 +1,7 @@
 import axios from "axios";
 import queryString from "query-string";
 
-const baseUrl = "https://mern-kanban-by-obaid.herokuapp.com/api/v1/";
+const baseUrl = process.env.BASE_URL;
 const getToken = () => localStorage.getItem("token");
 
 const axiosClient = axios.create({
