@@ -17,6 +17,8 @@ function App() {
     palette: { mode: "dark" },
   });
 
+  console.log(process.env.BASE_URL);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseLine />
